@@ -1,4 +1,4 @@
-# Render Blueprint Configuration for Planka
+# Render Blueprint Configuration for Planka (Free Tier Compatible)
 # GitHub Fork: https://github.com/soojh007/planka
 # Documentation: https://render.com/docs/blueprint-spec
 
@@ -10,7 +10,7 @@ services:
     region: singapore
     envVars:
       - key: BASE_URL
-        sync: false # Update to your live Render URL (e.g. https://planka-app.onrender.com)
+        sync: false # Set to your live URL after deploy (e.g. https://planka-app.onrender.com)
       - key: DATABASE_URL
         fromDatabase:
           name: planka-db
@@ -27,10 +27,6 @@ services:
         value: "Admin"
       - key: DEFAULT_ADMIN_USERNAME
         value: "admin"
-    disk:
-      name: planka-storage
-      mountPath: /app/data
-      sizeGB: 1
 
 databases:
   - name: planka-db
