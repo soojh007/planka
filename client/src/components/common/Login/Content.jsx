@@ -189,7 +189,7 @@ const Content = React.memo(() => {
               <Header
                 as="h1"
                 textAlign="center"
-                content={bootstrap.instanceName || 'PLANKA'}
+                content={bootstrap.instanceName || 'ETD TFL OPS'}
                 className={styles.formTitle}
               />
               <Header
@@ -248,16 +248,16 @@ const Content = React.memo(() => {
                 />
               </Form>
             </div>
-            <div className={styles.poweredBy}>
-              <p className={styles.poweredByText}>
-                <Trans i18nKey="common.poweredByPlanka">
-                  {'Powered by '}
-                  <a href="https://github.com/plankanban/planka" target="_blank" rel="noreferrer">
-                    PLANKA
-                  </a>
-                </Trans>
-              </p>
-            </div>
+           // <div className={styles.poweredBy}>
+           //   <p className={styles.poweredByText}>
+          //      <Trans i18nKey="common.poweredByPlanka">
+          //        {'Powered by '}
+         //         <a href="https://github.com/plankanban/planka" target="_blank" rel="noreferrer">
+         //           PLANKA
+         //         </a>
+          //      </Trans>
+           //   </p>
+         //   </div>
           </div>
         </Grid.Column>
         <Grid.Column
